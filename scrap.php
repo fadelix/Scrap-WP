@@ -7,9 +7,9 @@ execute('https://www.WPwebsite.com/wp-json/wp/v2/posts/?_fields=author,id,title,
 function execute($link,$idcat,$desc)
 {
 
-$username = 'apiusername'; // your wp username
-$password = 'password';
-$rest_api_url = "https://gosyari.com/wp-json/wp/v2/posts";
+$username = 'yourapiusername'; // your wp username
+$password = 'yourapipassword';
+$rest_api_url = "https://yourWPsite.com/wp-json/wp/v2/posts";
 $json = file_get_contents($link);
 $data = json_decode($json,true);
 $i=0;$count=0;
